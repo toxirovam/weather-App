@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ob-havo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container text-muted mx-auto text-center">
+    <h1 class="my-5">Maftuna Wather</h1>
+    <form id="change-location" class="text-muted">
+        <label class="mb-2" for="city">
+            Enter a location for weather information
+        </label>
+        <input
+         type="text"
+         name="city"
+         class="form-control"
+         autocomplete="off"
+         >
+    </form>
+
+    <div id="card" class="card shadow-lg">
+        <div class="icon-container">
+            <img id="weather-icon"  class="icon" src="" alt="">
+        </div>
+
+        <div id="details" class="text-uppercase">
+            <h5 class="mb-3"> City Name</h5>
+            <p class="mb3">CLOUDS</p>
+            <div class="display-4 mb-3"></div>
+            <span>TEMP</span>
+            <span>$deg;C</span>
+
+        </div>
+    </div>
+
+</div>
+<script src="./forecast.js"></script>
+<script src="./app.js"></script>
+    
+</body>
+</html>
